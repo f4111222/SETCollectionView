@@ -10,4 +10,8 @@
 
 @interface SETCollectionViewCell : UICollectionViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *artist;
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UIImageView *cover;
+
 @end

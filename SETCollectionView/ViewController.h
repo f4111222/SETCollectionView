@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIToolbarDelegate, UINavigationControllerDelegate>{
+    NSMutableData *responseData;
+    NSMutableArray *jarray;
+}
+
+@property (nonatomic, strong) IBOutlet UICollectionView *collectView;
 
 
 @end
